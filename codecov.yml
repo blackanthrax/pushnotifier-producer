@@ -1,9 +1,4 @@
-codecov:
-  token: b04bf2fd-ff6e-43b6-b4a6-f57e092be8ba
-  branch: master
-  bot: null
-
-  notify:
+notify:
     slack:
       default:
         url: https://hooks.slack.com/services/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
