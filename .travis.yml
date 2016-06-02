@@ -3,14 +3,7 @@ language: java
 notifications:
   slack: blackanthrax:eYnnaVzm0svyvQshJdIvokZM
 
-install:
-  - cd pushnotifier-produder-api
-  - mvn clean install
-  - cd ..
-
-script:
-  - cd pushnotifier-producer-spring
-  - mvn clean package
+script: build.sh
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) 

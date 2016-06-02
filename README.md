@@ -8,7 +8,7 @@ Implementations will base on this API project.
 ## pushnotifier-spring
 
 [![Build Status](https://travis-ci.org/blackanthrax/pushnotifier-producer.svg?branch=master)](https://travis-ci.org/blackanthrax/pushnotifier-producer)
-[![Code Coverage](https://img.shields.io/codecov/c/github/pvorb/property-providers/develop.svg)](https://codecov.io/github/pvorb/property-providers?branch=develop)
+[![Code Coverage](https://img.shields.io/codecov/c/github/blackanthrax/pushnotifier-producer.svg)](https://codecov.io/github/blackanthrax/pushnotifier-producer)
 
 The project pushnotifier-spring implements the pushnotifier-api and is made for the use in spring projects.
 It is based on the spring RestTemplate class.
