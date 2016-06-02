@@ -1,3 +1,23 @@
 language: java
+
 notifications:
   slack: blackanthrax:eYnnaVzm0svyvQshJdIvokZM
+
+install:
+  - cd pushnotifier-produder-api
+  - mvn clean install
+  - cd ..
+
+script:
+  - cd pushnotifier-producer-spring
+  - mvn clean package
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash) 
+
+deploy:
+  provider: releases
+  api_key: eYnnaVzm0svyvQshJdIvokZM
+  file: target/pushnotifier-producer-spring-*.jar
+  on:
+    tags: true
