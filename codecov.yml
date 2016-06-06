@@ -1,15 +1,15 @@
-notify:
-    slack:
-      default:
-        url: https://hooks.slack.com/services/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
-        branches:
-	  - master
-        attachments: "sunburst, diff"
-
 coverage:
   precision: 2
   round: down
   range: "70...100"
+
+  notify:
+    slack:
+      default:
+        url: https://hooks.slack.com/services/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
+        branches:
+          - master
+        attachments: "sunburst, diff"
 
   status:
     project:
@@ -25,5 +25,5 @@ coverage:
 
 
 comment:
-  layout: "header, diff, changes, suggestions"
+  layout: "header, diff, changes, uncovered"
   behavior: default
