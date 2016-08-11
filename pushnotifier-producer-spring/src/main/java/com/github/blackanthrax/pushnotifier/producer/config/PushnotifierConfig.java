@@ -16,10 +16,10 @@ import com.github.blackanthrax.pushnotifier.producer.messaging.MessagingService;
 @Configuration
 public class PushnotifierConfig {
     
-    @Value("${pushnotifier.producer.apiToken}")
+    @Value("${pushnotifier.producer.api-token}")
     private String apiToken;
     
-    @Value("${pushnotifier.producer.packageName}")
+    @Value("${pushnotifier.producer.package-name}")
     private String appPackageName;
     
     @Value("${pushnotifier.producer.password}")
